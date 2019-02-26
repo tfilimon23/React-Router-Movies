@@ -5,10 +5,10 @@ export default class SavedList extends Component {
     super(props);
   }
 
-  // function navigateHome(e) {
-  //   e.preventDefault();
-  //   props.history.push('/');
-  // };
+  navigateHome=(e) =>{
+  e.preventDefault();
+  this.props.history.push('/');
+  }
 
   render() {
     return (
@@ -17,7 +17,7 @@ export default class SavedList extends Component {
         {this.props.list.map(movie => (
           <span className="saved-movie">{movie.title}</span>
         ))}
-        <div className="home-button">Home</div>
+        <div onClick={this.navigateHome} className="home-button">Home</div>
       </div>
     );
   }
