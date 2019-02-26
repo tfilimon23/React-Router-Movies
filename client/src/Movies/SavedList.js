@@ -5,6 +5,11 @@ export default class SavedList extends Component {
     super(props);
   }
 
+  // function navigateHome(e) {
+  //   e.preventDefault();
+  //   props.history.push('/');
+  // };
+
   render() {
     return (
       <div className="saved-list">
